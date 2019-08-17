@@ -61,7 +61,7 @@
 
 > 当我们对两段代码传入相同的n值,测算两段代码的执行时间
 
-![1566002110905](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1566002110905.png)
+![1566002110905](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/1566002110905.png)
 
 可能现在看起来,感觉不是很明显,我们可以把n的值,适当的增加,再次运行测试
 
