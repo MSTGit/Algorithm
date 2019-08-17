@@ -65,11 +65,11 @@
 
 可能现在看起来,感觉不是很明显,我们可以把n的值,适当的增加,再次运行测试
 
-![1566002339295](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1566002339295.png)
+![1566002339295](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/1566002339295.png)
 
 其实,从现在,已经可以稍微感觉到一点差异了,当n的值为45的时候,递归调用的算法使用了4.85秒的时间,而通过算法优化后的代码,消耗的时间几乎没有变化,不过,我们可以再把n增大1,就可以看到很明显的效果
 
-![1566002546728](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1566002546728.png)
+![1566002546728](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/1566002546728.png)
 
 我们看到很明显的变化,当n = 46时,递归调用的计算时间,已近增加到了7.743秒,但是,通过算法优化后的代码,计算消耗的时间几乎没有任何变化,因此现在我们可以粗略的看出两段代码的好坏.
 
@@ -301,17 +301,17 @@ O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(n^3) < O(2^n) < O(n!) < O(n^n)
 
 当数据规模较小时
 
-![1566007940936](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1566007940936.png)
+![1566007940936](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/1566007940936.png)
 
 当数据规模较大时
 
-![1566008067840](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1566008067840.png)
+![1566008067840](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/1566008067840.png)
 
 - #### 斐波拉契示例函数时间复杂度分析
 
 >  recursiveFib函数的时间复杂度分析
 
-![1566009065412](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1566009065412.png)
+![1566009065412](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/1566009065412.png)
 
 一共执行的次数为 1 + 2 + 4 + 8 = 2^0 + 2^1 + 2^2 + 2^3 = @^4 - 1 = 2^(n-1) - 1 = 0.5 * 2^n - 1
 
