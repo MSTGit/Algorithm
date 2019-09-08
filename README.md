@@ -8,3 +8,5 @@
 
 [03-单向链表(笔记&源码&练习题解析)](https://github.com/MSTGit/Algorithm/blob/master/LinkedListDemo/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8.md)
 
+[04-虚拟头节点与双向链表(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/TwowayLinkedListDemo)
+
