@@ -1,0 +1,453 @@
+- #### 虚拟头节点
+
+再前面的add(int index, E element)或者remove(int index)函数中，我们针对index == 0的情况进行了特殊处理，因为一般来讲，在头尾两部分的时候，可能存在一些特殊情况。tip:源码参照SingleLinkedList2.java
+
+有时候为了让代码更加精简，统一所有节点的处理逻辑，可以再最前面增加一个虚拟头节点（不存储数据）
+
+在前面的链表当中，我们是直接将first指针指向0的节点
+
+![1566905748814](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566905748814.png)
+
+现在我们增加一个虚拟头节点，来指向0的节点，然后让first指针指向虚拟的头节点
+
+![1566905982701](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566905982701.png)
+
+需要做如下的调整
+
+1. 为LinkedList增加一个构造方法
+   ```java
+       public LinkedList() {
+           first = new Node<>(null,null);
+       }
+   ```
+   
+2. 调整node方法，由于我们之前是直接重first开始取，现在改为虚拟头节点后，应该重first的下一个节点开始取
+
+   ```java
+       private Node<E> node(int index) {
+           rangeCheck(index);
+           Node<E> node = first.next;
+           for (int i = 0; i < index; i++) {
+               node = node.next;
+           }
+           return node;
+       }
+   ```
+
+3. 由于现在增加虚拟头节点后，为0节点，前面又一个虚拟头节点，因此，在add(int index, E element)、remove(int index)等函数中，就不需要处理index == 0 的情况，源码查看LinkedList2类
+
+**这种方式，不是很常见，也不是很推荐，主要是对处理问题思路的拓展**
+
+- #### 复杂度分析
+
+我们来针对前面ArrayList和LinkedList两个类中，E get(int index)、void add(int index, E element)、E set(int index, E element)、E remove(int index)、E remove(int index)方法进行复杂度的分析
+
+ArrayList中**E get(int index)**
+
+```java
+    public E get(int index) {
+        //对索引进行判断
+        rangeCheck(index); //时间复杂度O(1)
+        return elements[index];//时间复杂度O(1)
+    }
+```
+
+E get(int index)的时间复杂度为O(1)
+
+**E set(int index, E element)**
+
+```java
+    public E set(int index,E element) {
+        rangeCheck(index);//时间复杂度O(1)
+        E old = elements[index];//时间复杂度O(1)
+        elements[index] = element;//时间复杂度O(1)
+        return old;
+    }
+```
+
+E set(int index, E element)的时间复杂度为O(1)
+
+**void add(int index, E element)**
+
+```java
+void add(int index, E element) {
+        //对索引进行判断
+       rangeCheckForAdd(index);//时间复杂度O(1)
+        //对数组进行扩容
+        ensureCapacity(size + 1);//时间复杂度O(1)
+    //在这个地方，数据规模为size
+        for (int i = size - 1; i >= index; i--) {
+            elements[i + 1] = elements[i];
+        }
+        elements[index] = element;
+        size++;
+    }
+```
+
+在add函数这个地方，数据规模为size，并且由于复杂度与size和index有关，因此就复杂度会有多种情况，即下方表示的
+
+> 复杂度一般分为以下几种
+
+- [ ] 最好情况复杂度
+
+最好情况就是在最后添加元素，这个时候不需要执行循环，那么复杂度为O(1)
+
+- [ ] 最坏情况复杂度
+
+最坏的情况是在最前面添加元素，这个时候循环执行的次数为数据规模，那么复杂度为O(n)
+
+- [ ] 平均情况复杂度
+
+在本例中，由于情况比较特殊，假设传入index的概率都一样时，那么index的平均值为（1 + 2 + 3 + . ... + n）/ n,那么复杂度为O(n / 2) -> O(n)
+
+**E remove(int index)**
+
+```java
+public E remove(int index) {
+        rangeCheck(index);
+        E old = elements[index];
+        for (int i = index + 1; i <= size - 1; i++) {
+            elements[i - 1] = elements[i];
+        }
+        elements[--size] = null;
+    return old;
+    }
+```
+
+同样的，在删除元素时，也存在最好和最坏的情况，最好的情况即为删除最后一个元素，则复杂度为O(1)，最坏即为删除最前面的一个元素，则复杂度为O(n)，平均复杂度也为O(n)
+
+接下来我们来看LinkedList中的**E get(int index)**
+
+```java
+    public E get(int index) {
+        //该地方的复杂度取决于node(int index)的复杂度
+        return node(index).element;
+    }
+```
+
+链表的结构如下所示
+
+![1566310888924](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566310888924.png)
+
+因此在查找元素的时候，需要一个一个的往下进行遍历，那么复杂度也就和ArrayList中的E remove(int index)相同，因此，也存在最好和最坏的情况，最好的情况即为删除最后一个元素，则复杂度为O(1)，最坏即为删除最前面的一个元素，则复杂度为O(n)，平均复杂度也为O(n)
+
+ **E set(int index, E element)** 
+
+```java
+    public E set(int index, E element) {
+        Node<E> node = node(index);
+        E old = node.element;
+        node.element = element;
+        return old;
+    }
+```
+
+在set(int index, E element)里面，也调用了node(int index)，那么复杂度和LinkedList中的E get(int index)相同
+
+**void add(int index, E element)**
+
+```java
+ public void add(int index, E element) {
+        rangeCheckForAdd(index);
+        if (index == 0) {
+          first =  new Node<E>(element,first);
+        } else  {
+            Node<E> prev = node(index - 1);
+            prev.next = new Node<>(element,prev.next);
+        }
+        size++;
+    }
+```
+
+可以看出，最好的情况为index == 0的情况，最坏的情况，则是找到最后一个元素，复杂度为O(n)，平均复杂度也为O(n)
+
+**E remove(int index)**
+
+```java
+    public E remove(int index) {
+        rangeCheck(index);
+        Node<E> node = first;
+        if (index == 0) {
+            first = first.next;
+        } else  {
+            Node<E> prev = node(index - 1);
+            node = prev.next;
+            prev.next = node.next;
+        }
+        size--;
+        return node.element;
+    }
+```
+
+删除节点的情况，最终也和添加节点的情况一样，复杂度相同
+
+所以最终的结果为下图
+
+![1566992841371](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566992841371.png)
+
+- #### 动态数组add(E element)复杂度分析
+
+```java
+    public void add(E element) {
+        add(size,element);
+    }
+```
+
+在这种情况下，我们看到，永远都是在size的位置进行添加元素，这种情况不需要挪动元素，那么复杂度为O(1),不过也存在最坏复杂度的情况，就是扩容的时候，即是O(n)，但是绝大多数情况是O(1),则平均复杂度可以视为O(1)，在这种情况下，纯在均摊复杂度，其均摊复杂度为O(1)
+
+分析
+
+假设此时有一个数组，最大容量为4，那么在前面4次添加操作时，复杂度均为O(1)
+
+![1566993703821](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566993703821.png)
+
+但是当我们继续往下添加的时候，就会扩容，在扩容时，复杂度为O(4)
+
+![1566993749648](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566993749648.png)
+
+所以在此时，扩容操作的复杂度就会均摊到前面4次添加操作中去，应为扩容与前面的添加操作存在关系
+
+![1566993895040](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1566993895040.png)
+
+相当于是每次add操作的次数为2，那么复杂度还是为O(1)
+
+- #### 双向链表
+
+> 此前所介绍的链表，也叫做单向链表
+>
+> 使用双向链表，可以提升链表的综合性能
+
+再前面单向链表的时候，示意图是这样的。tip:源码参照LinkedList.java
+
+![1567824839951](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567824839951.png)
+
+单向链表只有一条线，当前节点指向的永远是其下一个节点，所以其缺点是只能重头部往后面搜索
+
+然而双向链表，当中有一个指向上一个节点的指针，可以通过下一个节点，找到上一个节点，其示意图是这样的
+
+![1567825075829](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567825075829.png)
+
+如果当前节点为头节点，则该节点的prev指针指向null
+
+同样的，链表对象中，就对应的多了一个last指针，该指针指向链表的位节点，链表对象如下所示
+
+![1567825194902](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567825194902.png)
+
+整个链表的示意图这应该是这样的
+
+![1567825581248](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567825581248.png)
+
+有了双向链表，那么我们查找元素可能会从两个方向来进行擦找，一个是从头节点开始查找，一个是从尾节点开始擦找
+
+🤔什么时候从左往右开始找，什么时候从右往左开始找，如何进行判断？
+
+**查找节点**
+
+可以通过定位节点的索引，通过size进行判断，判断方式如下
+
+```java
+Node<E> node(int index) {
+        rangeCheck(index);
+        if (index < (size >> 1)) {
+            //在左边
+            Node<E> node = first;
+            for (int i = 0; i < index; i++) {
+                node = node.next;
+            }
+            return node;
+        } else {
+            //在右边
+            Node<E> node = last;
+            for (int i = size - 1; i > index; i--) {
+                node = node.prev;
+            }
+            return node;
+        }
+    }
+```
+
+**清空链表**
+
+在单向链表时，我们清空节点是直接将first指针置为null，那我们在双向链表中，如果同样的把last置为null的话，会有问题存在吗？我们先通过图片进行分析，清空链表的代码如下
+
+```java
+public void clear() {
+    size = 0;
+    first = null;
+    last = null;
+}
+```
+
+首先一个完整的链表是这样的
+
+![1567825581248](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567825581248.png)
+
+当我们把first和last都置为null之后，是这样的
+
+![1567827407159](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567827407159.png)
+
+置空以后，就存在一个问题，那么链表中的节点会被释放掉吗？因为我们看到，现在每个节点，都有指针被上一个节点或者下一个节点引用着，其实在Java当中，这种情况是会被释放的，应为在Java虚拟机当中，存在一个gc root对象，凡是没有被gc root对象所引用的内存，都会被系统回收掉。
+
+那问题来了，**什么样的对象是gc root对象呢？**
+
+在Java中，只要被栈空间对象指向的对象，属于gc root对象，由于我们在创建链表对象是是通过这种方式进行创建的
+
+```java
+List<Integer> list = new LinkedList<>();
+```
+
+其中通过`new LinkedList<>()`创建的对象，其内存在堆空间当中，而方法内创建的局部变量`List<Integer> list`在栈空间中，此时在栈空间的list引用着`new LinkedList<>()`内存地址，那么通过`new LinkedList<>()`创建出来的对象，就叫做gc root对象。
+
+知道什么叫做gc root对象以后，当我们清空链表时，将first和last引用都置为null之后，链表节点就不再有gc root对象引用着，因此节点的内存就会被系统回收掉，这就是Java虚拟机的做法。
+
+**链表的添加 add(int index, E element)**
+
+现在如下的一个双向链表，假设我们需要在节点为2的地方，添加节点
+
+![1567845965610](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567845965610.png)
+
+添加过程中的引用发生了如下变化
+
+![1567846273387](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567846273387.png)
+
+上面这种过程，通过代码表示为
+
+```java
+Node<E> next = node(index);
+Node<E> prev = next.prev;
+Node<E> node = new Node<>(prev,element,next);
+prev.next = node;
+next.prev = node;
+```
+
+不过这种添加是比较通用的一种情况，那么假设我们现在添加的位置为序号为0的位置，那么应该做特殊的处理，应为节点为0的prev为null，因此需要特殊的处理
+
+通过代码表示为
+
+```java
+Node<E> next = node(index);
+Node<E> prev = next.prev;
+Node<E> node = new Node<>(prev,element,next);
+next.prev = node;
+if (prev == null) {
+    first = node;
+} else  {
+    prev.next = node;
+}
+```
+
+![1567847021486](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567847021486.png)
+
+同样的，如果往最有一个位置添加元素，则需要特殊处理，因此特殊处理代码如下
+
+```java
+Node<E> oldLast = last;
+last = new Node<>(oldLast,element,null);
+oldLast.next = last;
+```
+
+![1567847631345](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567847631345.png)
+
+但是，这样写，还是存在问题，即为链表当中不纯在任何节点的时候，`Node<E> oldLast = last;`为null，这种情况需要特俗处理，代码为
+
+```java
+Node<E> oldLast = last;
+last = new Node<>(oldLast,element,null);
+if (oldLast == null) {
+    first = last;
+} else  {
+    oldLast.next = last;
+}
+```
+
+![1567847970263](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567847970263.png)
+
+完整的代码逻辑是这样的
+
+```java
+public void add(int index, E element) {
+        rangeCheckForAdd(index);
+        if (index == size) {
+            Node<E> oldLast = last;
+            last = new Node<>(oldLast,element,null);
+            if (oldLast == null) {
+                first = last;
+            } else  {
+                oldLast.next = last;
+            }
+        } else  {
+            Node<E> next = node(index);
+            Node<E> prev = next.prev;
+            Node<E> node = new Node<>(prev,element,next);
+            next.prev = node;
+            if (prev == null) {
+                first = node;
+            } else  {
+                prev.next = node;
+            }
+        }
+        size++;
+    }
+```
+
+**链表的删除 E remove(int index)**
+
+同样的，假设现在有如下的链表，我们想要删除下标为2的节点
+
+![1567848382053](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567848382053.png)
+
+首先我们找到即将被删除的节点，我们将即将被删除节点的上一个节点中的next指向被删除节点的next，被删除节点的下一个节点的prev指向被删除节点的prev，通过图示表示为
+
+![1567848579979](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567848579979.png)
+
+通过这样修改以后，node为2的节点，就从链表中成功的删除，并且该节点不再有引用指向它，其内存最终被系统回收
+
+![1567848684927](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567848684927.png)
+
+代码表示为：
+
+```java
+public E remove(int index) {
+        rangeCheck(index);
+        Node<E> node = node(index);
+        Node<E> prev = node.prev;
+        Node<E> next = node.next;
+        if (prev == null) {//等价于index == 0
+            first = next;
+        } else  {
+            prev.next = next;
+        }
+        if (next == null) {//等价于index == size - 1
+            last = prev;
+        } else  {
+            next.prev = prev;
+        }
+        size--;
+        return node.element;
+    }
+```
+
+
+
+#### 双向链表 VS 单向链表
+
+![1567850759251](https://github.com/MSTGit/Algorithm/blob/master/TwowayLinkedListDemo/Resource/1567850759251.png)
+
+#### 双向链表 VS 动态数组
+
+> 动态数组
+>
+> - 开辟、销毁内存空间的次数相对较少，但是可能造成内存空间的浪费(可以通过缩容解决)
+
+> 双向链表
+>
+> - 开辟、销毁内存空间的次数相对较多，但不会造成内存空间的浪费
+
+- 如果频繁在**尾部**进行**添加**、**删除**操作，**动态数组**、**双向链表**均可选择
+- 如果频繁在**头部**进行**添加**、**删除**操作， 建议选择使用**双向链表**
+- 如果有频繁的(在任意位置)进行**添加**、**删除**操作， 建议选择使用**双向链表**
+- 如果有频繁的**查询**操作(随机访问操作)，建议选择使用**动态数组**
+
+>  不过，看到这里，我们不禁有疑问，有了双向链表，单向链表是否就没有任何用处了呢？
+
+并非如此，在哈希表中的设计就用到了单向链表，至于原因，我会在哈希表章节中详细说明。
