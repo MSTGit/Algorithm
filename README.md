@@ -12,3 +12,5 @@
 
 [05-单向循环链表-双向循环链表-静态链表(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/CircleLinkedListDemo)
 
+[06-栈(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/StackDemo)
+
