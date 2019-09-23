@@ -1,6 +1,6 @@
 ## 数据结构与算法笔记
 
-#### 第一部分
+#### 第一部分:数据结构
 
 [01-复杂度(笔记&源码)](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo/Complexity.md)
 
@@ -15,4 +15,3 @@
 [06-栈(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/StackDemo)
 
 [07-队列(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/QueueDemo)
-
