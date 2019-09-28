@@ -245,3 +245,531 @@
 > - 和我们说的一样
 
 ![1569419403055](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569419403055.png)
+
+
+
+------
+
+
+
+以下内容，建议阅读[二叉搜索树](https://github.com/MSTGit/Algorithm/tree/master/BinaryTreeNote)部分后再来继续阅读
+
+- #### 二叉树的遍历
+
+> 遍历是数据结构中的常见操作
+>
+> - 把所有元素都遍历一遍
+
+> 在前面我们介绍的**线性数据结构**，它的遍历方法比较简单，一般是
+>
+> - 正序遍历
+> - 逆序遍历
+
+> 在**二叉树遍历**中，根据节点访问的顺序不同，常见的遍历方式有4种，分别为
+>
+> - 前序遍历(Preorder Traversal)
+> - 中序遍历(Inorder Traversal)
+> - 后序遍历(Postorder Traversal)
+> - 层序遍历(Level Order Traversal)
+
+- ##### 前序遍历(Preorder Traversal)
+
+例如现有如下的二叉树
+
+![1569636777670](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569636777670.png)
+
+> 访问顺序
+
+1. 优先访问**根节点**，然后再前序遍历**左子树**，前序遍历**右子树**[访问顺序:下图]
+
+![1569637244824](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569637244824.png)
+
+![1569637367512](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569637367512.png)
+
+- ##### 前序遍历的代码实现
+
+结合前面二叉搜索树的代码，我们可以在里面新增一个`preorderTraversal(Node<E> node)`的方法
+
+通过递归的方式实现代码
+
+```java
+public void  preorderTraversal(Node<E> node) {
+    if (node == null) {
+        return;
+    }
+   	System.out.println(node.element);
+    preorderTraversal(node.left);
+    preorderTraversal(node.right);
+}
+```
+
+另外，读者可以尝试使用其他的方式进行实现。如迭代
+
+- ##### 中序遍历(Inorder Traversal)
+
+> 访问顺序
+
+1. 先中序遍历左子树，然后访问根节点，最后中序遍历右子树
+
+最终的访问逻辑
+
+![1569638362655](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569638362655.png)
+
+由于我们当前的二叉树是一棵二叉搜索树，因此我们可以看到，如果我们使用中序遍历的方法进行遍历的话，最红遍历的结果为1,2,3,4,5,6,7,8,9,10,11,12。它们的顺序是从小到大的顺序进行遍历的
+
+如果我们的访问顺序是：
+
+先中序遍历右子树，然后访问根节点，最后中序遍历左子树
+
+我们不难发现，最终的访问结果为12,11,10,9,8,7,6,5,4,3,2,1。它们的顺序是中大到小的顺序进行遍历的
+
+因此:**二叉搜索树的中序遍历结果是升序或者降序的**
+
+- ##### 中序遍历的代码实现
+
+我们新增一个`inorderTraversal(Node<E> node)`的方法
+
+通过递归实现中序遍历的代码
+
+```java
+public void inorderTraversal(Node<E> node) {
+    if (node == null) return;
+    inorderTraversal(node.left);
+    System.out.println(node.element);
+    inorderTraversal(node.right);
+}
+```
+
+同样的，读者可以使用其他方式来实现
+
+- ##### 后序遍历(Postorder Traversal)
+
+> 访问顺序
+
+1. 先后续遍历左子树，然后后续遍历右子树，最后访问根节点
+
+最终的访问逻辑
+
+![1569639417209](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569639417209.png)
+
+- ##### 后续遍历的代码实现
+
+我们新增一个`postorderTraversal(Node<E> node)`的方法
+
+```java
+public void postorderTraversal(Node<E> node) {
+    if (node == null) return;
+    inorderTraversal(node.left);
+    inorderTraversal(node.right);
+    System.out.println(node.element);
+}
+```
+
+- ##### 层序遍历(Level Order Traversal)
+
+一层一层的往下进行访问
+
+> 访问顺序
+
+1. 从上到下，从左到右依次访问每个节点
+
+也就意味着，我们最终的访问顺序为
+
+![1569639885407](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569639885407.png)
+
+实现思路：使用队列
+
+1. 将根节点入队
+2. 循环执行下面的操作，直到队列为空
+
+> - 将队列头节点A出队，进行访问
+> - 将A的左子节点入队
+> - 将A的右子节点入队
+
+- ##### 后续遍历的代码实现
+
+我们新增一个`levelorderTraversal(Node<E> node)`的方法
+
+层序遍历的实现代码
+
+```java
+public void levelorderTraversal() {
+    if (root == null) return;
+    Queue<Node<E>> queue = new LinkedList<>();
+    queue.offer(root);
+    while (!queue.isEmpty()) {
+        Node<E> node = queue.poll();
+        System.out.println(node.element);
+        if (node.left != null) {
+            queue.offer(node.left);
+        }
+        if (node.right != null) {
+            queue.offer(node.right);
+        }
+    }
+}
+```
+
+🤔如果允许外界遍历二叉树的元素，你会如何设计接口？
+
+因此我们可以设计一个Visitor接口，定义一个方法，让调用者自己定义元素被访问后，需要做的操作
+
+因此4中遍历方法，改造完成后的代码是这样的
+
+```java
+public void preOrder(Visitor<E> visitor) {}
+private void preOrder(Node<E> node , Visitor<E> visitor) {
+    if (node == null || visitor == null) return;
+    visitor.visit(node.element);
+    preOrder(node.left,visitor);
+    preOrder(node.right,visitor);
+}
+
+public void inOrder(Visitor<E> visitor) {}
+private void inOrder(Node<E> node , Visitor<E> visitor) {
+    if (node == null || visitor == null) return;
+    preOrder(node.left,visitor);
+    visitor.visit(node.element);
+    preOrder(node.right,visitor);
+}
+
+public void postOrder(Visitor<E> visitor) {}
+private void postOrder(Node<E> node ,Visitor<E> visitor) {
+    if (node == null || visitor == null) return;
+    preOrder(node.left,visitor);
+    visitor.visit(node.element);
+    preOrder(node.right,visitor);
+}
+
+public void levelOrder(Visitor<E> visitor) {
+    if (root == null || visitor == null) return;
+    Queue<Node<E>> queue = new LinkedList<>();
+    queue.offer(root);
+    while (!queue.isEmpty()) {
+        Node<E> node = queue.poll();
+        visitor.visit(node.element);
+        if (node.left != null) {
+            queue.offer(node.left);
+        }
+        if (node.right != null) {
+            queue.offer(node.right);
+        }
+    }
+}
+```
+
+- #### 遍历的应用
+
+> 前序遍历
+
+树状结构展示(注意左右子树的顺序)
+
+练习-利用前序遍历树状打印二叉树
+
+> 中序遍历
+
+二叉搜索树的中序遍历按照升序或者降序处理节点
+
+> 后序遍历
+
+适用于一些先子后父的操作
+
+> 层序遍历
+
+计算二叉树的高度
+
+判断一棵树是否为完全二叉树
+
+练习1:计算二叉树的高度
+
+建议使用递归和迭代的方式实现。
+
+递归实现方式
+
+```java
+public int height(Node<E> node) {
+    if (node == null) return 0;
+    return 1 + Math.max(height(node.left),height(node.right));
+}
+```
+
+使用迭代的方式实现
+
+```java
+public int height() {
+        if (root == null) return 0;
+        int height = 0;//树的高度
+        int levelSize = 1;//存储着每一层元素的数量
+        Queue<Node<E>> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            Node<E> node = queue.poll();
+            levelSize--;
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+            if (levelSize == 0) { //即将访问下一层
+                levelSize = queue.size();
+                height++;
+            }
+        }
+        return height(root);
+    }
+```
+
+练习2:判断一棵树是否为完全二叉树
+
+解题思路
+
+1. 如果树为空，返回false
+2. 如果树不为空，开始层序遍历二叉树(使用队列)
+   - 如果node.left != null && node.right != null ，将node.left, node.right按顺序入队
+   - 如果node.left == null && node.right != null，返回false
+   - 如果node.left != null && node.right == null 或者node.left == null && node.right == null
+     - 那么后序遍历的节点应该都为叶子节点，才是完全二叉树
+     - 否则返回false
+
+解题源码
+
+```java
+public boolean isComplete() {
+    if (root == null) return false;
+    Queue<Node<E>> queue = new LinkedList<>();
+    queue.offer(root);
+    boolean leaf = false;
+    while (!queue.isEmpty()) {
+        Node<E> node = queue.poll();
+        if (leaf && !node.isLeaf()) return false;
+        if (node.hasTwoChildren()) {
+            queue.offer(node.left);
+            queue.offer(node.right);
+        } else if (node.left == null && node.right != null) {
+            return false;
+        } else {
+            //意味着后遍历的节点，都必须是叶子节点
+            leaf = true;
+        }
+    }
+    return true;
+}
+```
+
+练习3:翻转二叉树 题目来自[[Leetcode](https://leetcode-cn.com/problems/invert-binary-tree/)]
+
+将所有节点的左右子树都交换
+
+由于使用了多种解题方法，因此[解题源码](https://github.com/MSTGit/Algorithm/tree/master/LeetCode/BinaryTree)在这里
+
+- #### 根据遍历结果重构二叉树
+
+即：根据遍历的结果，推导出该结果是哪种二叉树
+
+通过以下结果可以保证重构出唯一的一棵二叉树
+
+- 前序遍历结果 + 中序遍历结果
+- 后序遍历结果 + 中序遍历结果
+
+为什么根据前序遍历和中序遍历的结果，就能推导出一棵二叉树的结果
+
+假设下图为前序遍历的结果示意图，其中红色为根节点
+
+![1569673096661](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569673096661.png)
+
+其中left(左子树)和right(右子树)结果，同样也是采用前序遍历
+
+下图为中序遍历的结果示意图，其中红色为根节点
+
+![1569673161571](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569673161571.png)
+
+其中left(左子树)和right(右子树)结果，同样也是采用中序遍历
+
+通过以上两个结果，我们可以知道
+
+1. 根据前序遍历的结果，我们可以知道结果中的第一个节点为根节点
+2. 找到根节点后，根据中序遍历的结果，可以找到左子树和右子树的边界，根节点左边的为左子树，根节点右边的为右子树，也就知道了哪些元素属于左子树，哪些元素属于右子树
+3. 通过中序遍历的结果，已经知道了哪些元素属于左子树，哪些元素属于右子树，因此，我们在前序遍历中，就知道了哪些元素为左子树，哪些元素属于右子树
+4. 已经知道了哪些节点属于哪个子树，因此前序遍历的左子树中的第一个元素，为左子树的根节点
+5. 通过前序遍历中找到的左子树根节点，可以在中序遍历的左子树中，找到左子树的左子树和右子树，因为中序遍历的特点是通过根节点，将左右区分开来
+6. 通过这种拆分，又可以拆分为一个规模更小的遍历结果，以此类推，谁是谁的左节点，谁是谁的右节点，谁是谁的父节点，都能拆分出来
+
+因此通过后序遍历的结果 + 中序遍历的结果，也是同理
+
+通过这个结论，可以尝试以下练习
+
+通过前序遍历结果 + 中序遍历结果重构二叉树
+
+- 前序遍历结果：4 2 1 3 6 5
+- 中序遍历结果：1 2 3 4 5 6
+
+利用前面的结论，我们知道
+
+1. 当前二叉树的根节点为 4
+   ![1569674494819](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569674494819.png)
+
+2. 通过中序遍历的结果知道，该二叉树的左子树为 1 2 3 ，右子树为 5 6
+3. 在通过前序遍历，就可以知道，左子树的根节点为 2，右子树的根节点为 6![1569674598968](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569674598968.png)
+4. 由于已经知道了2为左子树的根节点,那么通过中序遍历的结果,2位1 3 的父节点,1为2的左子树,3为2的右子树![1569674742368](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569674742368.png)
+5. 前面知道6位右子树的根节点,那么通过中序遍历的结果,6为 5的父节点,5在6的左边,因此5为6的左子树![1569674866123](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569674866123.png)
+
+🤔根据前序遍历的结果 + 后序遍历的结果,能重构出唯一的一棵二叉树吗?
+
+- 如果是一个真二叉树,它的结果是唯一的
+- 否则结果不唯一
+
+因为有以下的情况
+
+![1569675214321](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569675214321.png)
+
+如果两个的遍历结果如上图所示,并且其中一个子树为空的话,就没法知道该结果为左子树的结果还是右子树的结果
+
+如果二叉树的左右节点都不为空,遍历结果如下图
+
+![1569675498262](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569675498262.png)
+
+我们可以通过该结果得到以下信息
+
+1. 首先我们可以马上确认根节点,前序遍历的结果,最前面的节点为根节点，根节点的下一个节点为左子树的根节点
+2. 通过前序遍历中找到的左子树根节点，可以在后序遍历的左子树结果中找到，并且在后序遍历结果中，左子树根节点在左子树结果中的最后一位
+3. 在后序遍历中，通过左子树根节点的位置，就可以知道左子树和右子树的范围，然后再通过上面的结论，就可以重构出二叉树
+
+![1569675928686](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569675928686.png)
+
+- #### 前驱节点(predecessor)
+
+> 前驱节点：中序遍历时的前一个节点
+>
+> - 如果是二叉搜索树，前驱节点就是前一个比它小的节点
+
+例如有下列的二叉树
+
+![1569676259946](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569676259946.png)
+
+它的中序遍历结果为
+
+![1569676281756](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569676281756.png)
+
+节点8的前驱节点为7
+
+因此有以下情况:
+
+情况1
+
+> 如果左子树不为空 node.left != null
+>
+> 例如上图二叉树中的6 13 8均符合这种情况
+>
+> 前驱节点predecessor = node.left.right.right.right...
+>
+> 终止条件为:right 为null
+
+情况2：
+
+> node.left == null && node.parent != null
+>
+> 例如上图二叉树中的7 11 9 1 均符合这种情况
+>
+> 前驱节点predecessor = node.parent.parent.parent....
+>
+> 终止条件为:node的parent在右子树当中
+
+情况3：
+
+> node.left == null && node.parent == null
+>
+> 这种情况的假设上图二叉树的左子树不存在，即满足以上条件
+>
+> 在这种情况下，是没有前驱节点的
+
+因此查找前驱节点的实现代码是这样的
+
+```java
+private Node<E> predecessor(Node<E> node) {
+    if (node == null) return null;
+    Node<E> p = node.left;
+    if (node.left != null) {
+        //从左子树中找前驱
+        while (p.right != null) {
+            p = p.right;
+        }
+        return p;
+    }
+    //从父节点，祖父节点中寻找前驱节点
+    while (node.parent != null && node == node.parent.left) {
+        node = node.parent;
+    }
+    //node.parent == null
+    //node == node.parent.right
+    return node.parent;
+}
+```
+
+- #### 后继节点(successor)
+
+> 后继节点：中序遍历是的后一个节点
+>
+> 如果是二叉搜索树，后继节点就是后一个比它大的节点
+
+因此，如果有以下的一棵二叉树
+
+![1569678387546](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569678387546.png)
+
+通过中序遍历后的结果为
+
+![1569678406286](https://github.com/MSTGit/Algorithm/blob/master/BinaryTreeNote/Resource/1569678406286.png)
+
+同样的，也有以下几种情况
+
+情况1：
+
+> node.right  != null
+>
+> 例如上图二叉树中的1 8 4均符合这种情况
+>
+> successor = node.right.left.left.left....
+>
+> 终止条件：left == null
+
+情况2：
+
+> node.right == null && node.parent != null
+>
+> 例如上图二叉树中的7 6 3 11均符合这种情况
+>
+> successor = node.parent.parent.parent....
+>
+> 终止条件：node在parent的左子树中
+
+情况3：
+
+> node.right = null && node.parent == null
+>
+> 那就没有前驱节点
+>
+> 例如：没有右子树的根节点
+
+因此查找后继节点的代码是这样的
+
+```java
+private Node<E> successor(Node<E> node) {
+    if (node == null) return null;
+    Node<E> p = node.right;
+    if (p != null) {
+        //从右子树中找前驱
+        while (p.left != null) {
+            p = p.left;
+        }
+        return p;
+    }
+    //从父节点，祖父节点中寻找前驱节点
+    while (node.parent != null && node == node.parent.right) {
+        node = node.parent;
+    }
+    //node.parent == null
+    //node == node.parent.right
+    return node.parent;
+}
+```
+
