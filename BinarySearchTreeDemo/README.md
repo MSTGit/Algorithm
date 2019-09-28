@@ -2,7 +2,7 @@
 
 如下列整数
 
-![1569497236143](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569497236143.png)
+![1569497236143](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569497236143.png)
 
 方法一：
 
@@ -14,7 +14,7 @@
 
 但是添加删除的平均复杂度为O(n)
 
-![1569497457199](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569497457199.png)
+![1569497457199](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569497457199.png)
 
 因此，针对这种需求，有没有更好的方案呢？
 
@@ -28,7 +28,7 @@
 
 如下就是一棵二叉搜索树
 
-![1569497896384](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569497896384.png)
+![1569497896384](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569497896384.png)
 
 特点：
 
@@ -86,15 +86,15 @@ boolean contains(E element);
 
 比如往以下二叉树中添加12,1
 
-![1569500936791](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569500936791.png)
+![1569500936791](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569500936791.png)
 
 添加12后，二叉树变为
 
-![1569501321226](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569501321226.png)
+![1569501321226](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569501321226.png)
 
 添加1后，二叉树变为
 
-![1569501443804](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569501443804.png)
+![1569501443804](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569501443804.png)
 
 添加步骤：
 
@@ -152,8 +152,8 @@ public void add(E element) {
 
 如果我们直接通过Integer类型来进行比较的话，我们当中的元素为7,4,9,2,5,8,11,3,12,1时，然后通过工具，打印出来的结果为[具体实现，请查阅源码]
 
-![1569506613143](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569506613143.png)
+![1569506613143](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569506613143.png)
 
 同样的，我们也可以通过自定义的类进行打印，比如我们现在有一个Person的类，其中根据Person的age大小进行比较，我们也可以得出以下比较结果
 
-![1569506580583](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1569506580583.png)
+![1569506580583](https://github.com/MSTGit/Algorithm/blob/master/BinarySearchTreeDemo/Resource/1569506580583.png)
