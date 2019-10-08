@@ -88,9 +88,30 @@ public class BinarySearchTreeDemo {
         System.out.println(bst);
         System.out.println(bst.height1());
     }
+    /*
+     * 二叉树的删除节点
+     * */
+    public static void test7() {
+        Integer data[] = new Integer[]{
+                7,4,9,2,5,8,11,3,12,1
+        };
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        for (int i = 0; i < data.length; i++) {
+            bst.add(data[i]);
+        }
+       // System.out.println(bst);
+        BinaryTrees.println(bst);
+        bst.remove(1);
+        bst.remove(3);
+        bst.remove(12);
+        BinaryTrees.println(bst);
+        bst.remove(5);
+        BinaryTrees.println(bst);
+    }
     public static void main(String[] args) {
         //test();
 //        test1();
-        test6();
+//        test6();
+        test7();
     }
 }
