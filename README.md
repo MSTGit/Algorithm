@@ -20,5 +20,7 @@
 
 [09-二叉搜索树(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/BinarySearchTreeDemo)
 
+[10-平衡二叉搜索树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/BalanceBinarySearchTreeNode)
+
 
 
