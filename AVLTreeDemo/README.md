@@ -478,3 +478,7 @@ private void rebalance2(Node<E> grand){
 > - 搜索：O(logn)
 > - 添加：O(logn)，仅需O(1)次的旋转操作
 > - 删除：O(logn)，最多需要O(logn)吃的旋转操作
+
+
+
+本节内容略显抽象，建议结合源码阅读。
