@@ -24,5 +24,7 @@
 
 [11-AVL树(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/AVLTreeDemo)
 
+[12-B树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/BTreeNote)
+
 
 
