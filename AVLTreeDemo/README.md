@@ -356,9 +356,17 @@ private void rebalance2(Node<E> grand){
 
 ![1570712880285](https://github.com/MSTGit/Algorithm/blob/master/AVLTreeDemo/Resource/1570712880285.png)
 
-可以看到，在删除16之前，整棵树处于平衡状态，当我们删除掉16以后，节点15的平衡因子变为了2,15失去了平衡[下图]，需要注意，在做删除操作时，只可能导致**父节点**失衡，除付节点一万的其余节点都不可能失衡
+可以看到，在删除16之前，整棵树处于平衡状态，当我们删除掉16以后，节点15的平衡因子变为了2,15失去了平衡[下图]，需要注意，在做删除操作时，可能导致**父节点**或者**祖先节点**失衡，并且只有一个节点会失衡，其他节点都不可能失衡
 
 ![1570712978276](https://github.com/MSTGit/Algorithm/blob/master/AVLTreeDemo/Resource/1570712978276.png)
+
+另外一种导致祖先节点失衡的情况，有下列一棵二叉搜索树
+
+![1570928785617](https://github.com/MSTGit/Algorithm/blob/master/AVLTreeDemo/Resource/1570928785617.png)
+
+如果把16删除以后，其父节点不会失衡，但是其祖父节点会失衡，通过下图可以看到，此时，节点11的平衡因子为2，祖父节点失衡了
+
+![1570928948361](https://github.com/MSTGit/Algorithm/blob/master/AVLTreeDemo/Resource/1570928948361.png)
 
 因此，在这种失衡的情况下，我们也需要通过旋转的方式，来恢复二叉树的平衡
 
@@ -470,7 +478,7 @@ private void rebalance2(Node<E> grand){
 
 > 删除
 >
-> - 只可能会导致**父节点**失衡
+> - 可能会导致**父节点**或**祖父节点**失衡，只有一个节点会失衡
 > - 让父节点恢复平衡后，可能会导致更高层的祖先节点失衡[最多需要O(logn)次调整]
 
 > 平均时间复杂度
