@@ -154,7 +154,7 @@
 
 由于B树的性质，我们可以知道，下溢节点的元素数量必然等于⌈m / 2⌉  - 2，如下图
 
-![1570803622149](https://github.com/MSTGit/Algorithm/blob/master/BTreeNote/Resource/1570803622149.png)
+![1570929631144](https://github.com/MSTGit/Algorithm/blob/master/BTreeNote/Resource/1570929631144.png)
 
 如果下溢节点临近的兄弟节点，至少有⌈m / 2⌉ 个元素，可以向其借一个元素
 
@@ -162,7 +162,7 @@
 
 这种操作其实就是:**旋转**
 
-![1570803863634](https://github.com/MSTGit/Algorithm/blob/master/BTreeNote/Resource/1570803863634.png)
+![1570929651930](https://github.com/MSTGit/Algorithm/blob/master/BTreeNote/Resource/1570929651930.png)
 
 如果下溢节点临近的兄弟节点，只有⌈m / 2⌉ - 1 个元素[下图]
 
