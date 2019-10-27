@@ -4,7 +4,7 @@
 
 其中Map的结构类似于如下的对应关系
 
-![1571834952531](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1571834952531.png)
+![1571834952531](https://github.com/MSTGit/Algorithm/blob/master/MapDemo/Resource/1571834952531.png)
 
 要求：**Map的每一个key是唯一的**
 
@@ -36,11 +36,11 @@ void traversal(Visitor<K,V> visitor);
 
 前面我们已经知道了，下图是一个Map
 
-![1571834952531](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1571834952531.png)
+![1571834952531](https://github.com/MSTGit/Algorithm/blob/master/MapDemo/Resource/1571834952531.png)
 
 当我们去掉Map的value，只留下Key之后
 
-![1571840942857](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1571840942857.png)
+![1571840942857](https://github.com/MSTGit/Algorithm/blob/master/MapDemo/Resource/1571840942857.png)
 
 我们发现，它就是一个Set，因为在Map中，它的key一定是唯一的。
 
