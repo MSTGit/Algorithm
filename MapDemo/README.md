@@ -1,6 +1,6 @@
 - #### 映射(Map)
 
-> Map 在有些变成语言中也叫做指点（dictionary，比如Python，Objective-C，Swift等）
+> Map 在有些变成语言中也叫做字典（dictionary，比如Python，Objective-C，Swift等）
 
 其中Map的结构类似于如下的对应关系
 
