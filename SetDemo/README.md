@@ -60,7 +60,7 @@ public void add(E element) {
 
 我们对其做单词分析，将一些文件，导入到内存，然后拆分为一个个单词，最终将这多个单词利用ListSet与TreeSet来做添加，删除，搜索操作，最终得出的的时间差异结果如下（可在demo中进行测试）
 
-![1571833942461](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1571833942461.png)
+![1571833942461](https://github.com/MSTGit/Algorithm/blob/master/SetDemo/Resource/1571833942461.png)
 
 最终，我们看到，通过ListSet来对25万个单词进行添加，删除，搜索，去重，一共花了7秒钟的时间，但是红黑树只花了0.169秒，通过时间的比较，我们就能直观的感受到红黑树的强大。
 
