@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0bb1918-b3e3-45bb-971a-57f57796b603" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/AVLTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/AVLTreeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/ArrayListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/Asserts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/BinarySearchTreeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinaryTreeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asserts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circle/CirleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circle/SingleCircleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedListDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/List.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single/SingleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single/SingleLinkedList2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/AbstractList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/List.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/StackDemo.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NOTE.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedListDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-601">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/xd/Map/Set/Set.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/List/List.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/List/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/List/AbstractList.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/file/FileInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/file/Files.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/Tree/BinaryBalanceSearchTree.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/Tree/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/Tree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/Tree/RBTree.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/ListSet.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/Set.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/Times.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/TreeSet.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Set/SetDemo.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="22" />
+    <option name="y" value="84" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SetDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SetDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SetDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkList" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\T\Desktop\数据结构和算法\NOTE\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.LinkedListDemo">
+    <configuration name="AVLTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xd.AVLTree.AVLTreeDemo" />
+      <module name="NOTE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xd.AVLTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xd.ArrayList.ArrayListTest" />
+      <module name="NOTE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xd.ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xd.BinarySearchTree.BinarySearchTreeDemo" />
+      <module name="NOTE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xd.BinarySearchTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xd.LinkList.LinkedListDemo" />
+      <module name="NOTE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xd.LinkList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xd.Stack.StackDemo" />
+      <module name="NOTE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xd.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LinkedListDemo" />
+        <item itemvalue="Application.BinarySearchTreeDemo" />
+        <item itemvalue="Application.AVLTreeDemo" />
+        <item itemvalue="Application.ArrayListTest" />
+        <item itemvalue="Application.StackDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0bb1918-b3e3-45bb-971a-57f57796b603" name="Default Changelist" comment="" />
+      <created>1572141860715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572141860715</updated>
+      <workItem from="1572141865384" duration="427000" />
+      <workItem from="1572142457198" duration="78000" />
+      <workItem from="1572142546983" duration="17000" />
+      <workItem from="1572142622619" duration="30000" />
+      <workItem from="1572142781694" duration="36000" />
+      <workItem from="1572142903690" duration="22000" />
+      <workItem from="1572143004017" duration="27000" />
+      <workItem from="1572143122118" duration="19000" />
+      <workItem from="1572143256355" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="675000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37960956" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/xd/Map/Set/Set.java" />
+    <entry file="file://$PROJECT_DIR$/src/xd/Set/SetDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/file/Files.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/file/FileInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/List/AbstractList.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/List/LinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/List/List.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/ListSet.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/Tree/BinaryTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/Tree/RBTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/Set.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/SetDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/Tree/BinarySearchTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/Tree/BinaryBalanceSearchTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/Times.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Set/TreeSet.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Stack/StackDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/ArrayList/ArrayListTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/AVLTree/AVLTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/AVLTree/AVLTreeDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/xd/BinarySearchTree/BinarySearchTreeDemo.java" />
+    <entry file="file://$PROJECT_DIR$/NOTE.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedListDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-601">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
