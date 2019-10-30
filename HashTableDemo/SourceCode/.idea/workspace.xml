@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0bb1918-b3e3-45bb-971a-57f57796b603" name="Default Changelist" comment="" />
+    <list default="true" id="f0bb1918-b3e3-45bb-971a-57f57796b603" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/AVLTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/AVLTreeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/printer/BinaryTreeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/printer/BinaryTrees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/printer/InorderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/printer/LevelOrderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/src/com/xd/AVLTree/printer/Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ComplexityDemo/SourceCode/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +29,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NOTE.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="240">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ComplexityDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/HashTable/HashTableDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/HashTable/Map/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="339" column="33" selection-start-line="339" selection-start-column="33" selection-end-line="339" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/HashTable/Map/LinkedHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -55,14 +88,17 @@
         <option value="$PROJECT_DIR$/src/com/xd/Set/Times.java" />
         <option value="$PROJECT_DIR$/src/com/xd/Set/TreeSet.java" />
         <option value="$PROJECT_DIR$/src/com/xd/Set/SetDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/HashTable/Map/HashMap.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/HashTable/Map/LinkedHashMap.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/HashTable/HashTableDemo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="y" value="84" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -70,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,11 +118,25 @@
               <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SetDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="HashTable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SetDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="HashTable" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -115,26 +164,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ComplexityDemo">
+  <component name="RunManager" selected="Application.HashTableDemo">
     <configuration name="AVLTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xd.AVLTree.AVLTreeDemo" />
       <module name="NOTE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.xd.AVLTree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xd.ArrayList.ArrayListTest" />
-      <module name="NOTE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xd.ArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,6 +198,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HashTableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xd.HashTable.HashTableDemo" />
+      <module name="NOTE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xd.HashTable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xd.LinkList.LinkedListDemo" />
       <module name="NOTE" />
@@ -177,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashTableDemo" />
         <item itemvalue="Application.ComplexityDemo" />
         <item itemvalue="Application.LinkedListDemo" />
         <item itemvalue="Application.BinarySearchTreeDemo" />
         <item itemvalue="Application.AVLTreeDemo" />
-        <item itemvalue="Application.ArrayListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,17 +254,18 @@
       <workItem from="1572143122118" duration="19000" />
       <workItem from="1572143256355" duration="19000" />
       <workItem from="1572143417712" duration="624000" />
+      <workItem from="1572449648258" duration="227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1299000" />
+    <option name="totallyTimeSpent" value="1526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -224,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37960956" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.07049891" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,7 +284,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.12906724" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -272,17 +322,35 @@
     <entry file="file://$PROJECT_DIR$/src/com/xd/AVLTree/AVLTreeDemo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xd/BinarySearchTree/BinarySearchTreeDemo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedListDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/ComplexityDemo.java" />
     <entry file="file://$PROJECT_DIR$/NOTE.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComplexityDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xd/HashTable/Map/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="339" column="33" selection-start-line="339" selection-start-column="33" selection-end-line="339" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/HashTable/Map/LinkedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/HashTable/HashTableDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
         </state>
       </provider>
     </entry>
