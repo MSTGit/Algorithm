@@ -35,7 +35,7 @@ public Company get(int phone) {
 
 那么，最终，这些公司信息存储到数组里面，在内存中的一个什么样的情况呢？即如下图这样进行存储的
 
-![1572078785267](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572078785267.png)
+![1572078785267](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572078785267.png)
 
 那么，通过这种方式，存在什么问题呢？
 
@@ -60,7 +60,7 @@ put("Kate",888);
 
 那么，哈希表在内存中是怎样存储这三对数据的呢？
 
-![1572079627569](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572079627569.png)
+![1572079627569](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572079627569.png)
 
 哈希表添加，搜索，删除的流程
 
@@ -79,7 +79,7 @@ put("Kate",888);
 
 例如可能会出现以下这种情况
 
-![1572080197839](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572080197839.png)
+![1572080197839](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572080197839.png)
 
 解决哈希冲突的常见方法
 
@@ -90,7 +90,7 @@ put("Kate",888);
 3. 链地址发(Separate Chaining)
    - 比如通过链表，将同一index的元素串起来[下图]
 
-![1572080832425](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572080832425.png)
+![1572080832425](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572080832425.png)
 
 - #### JDK1.8的哈希冲突解决方案
 
@@ -99,7 +99,7 @@ put("Kate",888);
    - 比如当哈希表容量≥64且**单向链表**的节点数量＞8的时候[下图]
 3. 当红黑树节点数量少到一定程度时，又会转为**单向链表**
 
-![1572081172719](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572081172719.png)
+![1572081172719](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572081172719.png)
 
 所以在JDK1.8中的哈希表是使用**链表**+**红黑树**来解决哈希冲突的
 
@@ -230,7 +230,7 @@ public  static int hashCode(double value) {
 >
 > 符号^表示异或（相同为0，不同为1）
 
-![1572085514121](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572085514121.png)
+![1572085514121](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572085514121.png)
 
 ##### 字符串的哈希值
 
@@ -354,11 +354,11 @@ public boolean equals(Object obj) {
 
 **扩容前处理900万条数据所花的时间**
 
-![1572352586841](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572352586841.png)
+![1572352586841](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572352586841.png)
 
 **扩容后处理900万条数据所花的时间**
 
-![1572352683901](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572352683901.png)
+![1572352683901](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572352683901.png)
 
 我们看到，处理900万条数据，扩容前后相差了接近2秒钟是时间。可见提升是多么的明显。、
 
@@ -370,7 +370,7 @@ public boolean equals(Object obj) {
 
 我们还是处理900万条数据，我们得到以下的结果
 
-![1572353523099](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572353523099.png)
+![1572353523099](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572353523099.png)
 
 最终我们看到，哈希表的性能明显优于红黑树映射表的性能。
 
@@ -385,11 +385,11 @@ public boolean equals(Object obj) {
 
 下图是我们前面的HashMap，假设索引03中的元素添加顺序为37,21,31,41,97,52,42,83
 
-![1572356049219](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572356049219.png)
+![1572356049219](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572356049219.png)
 
 如何维护每个元素的添加顺序呢？我们可以通过在LinkedHashMap中增加一个指针，该指针指向下一个添加的元素，如下图所示
 
-![1572356329650](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572356329650.png)
+![1572356329650](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572356329650.png)
 
 因此我们只需要在原来红黑树节点的基础上，增加两个字段，一个用来指向当前节点的上一个节点，一个用来指向当前节点的下一个节点，就可以将所有节点，通过链表的形式串起来。
 
@@ -405,15 +405,15 @@ public boolean equals(Object obj) {
 
 如果删除的是叶子节点(如节点97)
 
-![1572437187123](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572437187123.png)
+![1572437187123](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572437187123.png)
 
 站在红黑树的角度，直接删除掉就好了，因此直接去掉父节点指向当前节点的线就好了
 
-![1572437298724](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572437298724.png)
+![1572437298724](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572437298724.png)
 
 然后再更新链表的线，最终结果为
 
-![1572437378672](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572437378672.png)
+![1572437378672](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572437378672.png)
 
 
 
@@ -423,25 +423,25 @@ public boolean equals(Object obj) {
 
 站在链表的角度，删除31之前，我们的遍历顺序为（部分）52 -> 37 - > 21 -> 31 -> 41，删除之后的遍历顺序应该为（部分）52 -> 37 - > 21 -> 41
 
-![1572437378672](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572437378672.png)
+![1572437378672](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572437378672.png)
 
 按照我们一般的逻辑来讲，我们直接将31删除掉就好了，因此从红黑树的角度讲，删除后最终的结果为
 
-![1572438140825](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572438140825.png)
+![1572438140825](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572438140825.png)
 
 好了，此时我们再看看从链表角度的遍历顺序，发现变为了 52 -> 21 -> 37 -> -> 41，遍历顺序与我们期望的不符，因此问题就产生了。因此我们需要注意更换node与前驱/后继节点的链接位置，来保证删除后的正确遍历顺序。
 
 因此，同样的，假设有如下的一棵红黑树
 
-![1572438953491](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572438953491.png)
+![1572438953491](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572438953491.png)
 
 删除是节点31,31节点的后继为37，我们在删除之前，先调换两个节点在链表中的位置，注意，不交换链表在红黑树种的位置，位置交换后的结果为
 
-![1572438882591](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572438882591.png)
+![1572438882591](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572438882591.png)
 
 然后最终删除后的结果为
 
-![1572439001628](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572439001628.png)
+![1572439001628](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572439001628.png)
 
 通过这种方式，先交换位置后，再删除的话，就能顺利的解决链表遍历顺序不符的问题
 
@@ -449,11 +449,11 @@ public boolean equals(Object obj) {
 
 下图是链表原始的顺序
 
-![1572439583570](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572439583570.png)
+![1572439583570](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572439583570.png)
 
 调换顺序后的期望位置
 
-![1572439631211](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572439631211.png)
+![1572439631211](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572439631211.png)
 
 因此我们可以通过将被删除的节点与正在被删除的节点通过以下的方式进行位置的调换
 
@@ -513,7 +513,7 @@ if (linkedRemoveNode.next == null) {
 
 下图是科学家整理出来的不同数据规模对应的最佳素数，在数据规模介于上界与下界之间时，选择对应的素数，哈希表的性能最优，哈希冲突可以降低到最少。
 
-![1572355159058](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572355159058.png)
+![1572355159058](https://github.com/MSTGit/Algorithm/blob/master/HashTableDemo/Resource/1572355159058.png)
 
 以上素数还有以下两个特点：
 
