@@ -8,15 +8,15 @@
 
 通过我们前面介绍的几种数据结构，我们可以用以下的一些数据结构来实现
 
-![1572440807492](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572440807492.png)
+![1572440807492](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572440807492.png)
 
 其中普通的动态数组\双向链表保存数据如所示
 
-![1572440854699](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572440854699.png)
+![1572440854699](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572440854699.png)
 
 有序动态数组\双线链表保存数据如下所示
 
-![1572440882342](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572440882342.png)
+![1572440882342](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572440882342.png)
 
 我们发现，以上的数据结构，都有不同的优缺点，那么有没有更优的数据结构来完成这样的需求呢？
 
@@ -51,11 +51,11 @@ Top K问题的解法之一：可以用数据结构“堆”来解决
 
 如果任意节点的值总是≥子节点的值，称为：最大堆，大根堆，大顶堆。如
 
-![1572441853795](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572441853795.png)
+![1572441853795](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572441853795.png)
 
 如果任意节点的值总是≤子节点的值，称为：最小堆，小根堆，小顶堆。如
 
-![1572441922667](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572441922667.png)
+![1572441922667](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572441922667.png)
 
 通过以上结论，我们可以发现，堆中的元素必须具备可比较性（跟二叉搜索树一样）
 
@@ -75,11 +75,11 @@ E replace(E element);//删除堆顶元素的同时插入一个新元素
 
 二叉堆的逻辑结构就是一颗完全二叉树，所以也叫做完全二叉堆。如下图
 
-![1572442543491](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572442543491.png)
+![1572442543491](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572442543491.png)
 
 鉴于完全二叉树的一些性质，二叉堆的底层（物理结构）一般用数组实现即可
 
-![1572442665885](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572442665885.png)
+![1572442665885](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572442665885.png)
 
 关于数组索引（i）的规律（n是元素数量）
 
@@ -94,35 +94,35 @@ E replace(E element);//删除堆顶元素的同时插入一个新元素
 
 假设现在有如下的一个最大堆，往堆中假如一个新的元素80，一般情况是这样添加的
 
-![1572446166527](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446166527.png)
+![1572446166527](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446166527.png)
 
 对应在数组中的位置，默认是放最后面
 
-![1572446188611](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446188611.png)
+![1572446188611](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446188611.png)
 
 此时，我们发现，现在是不满足最大堆的性质的，此时我们将当前节点与父节点比较大小，发现如果比父节点大，则和父节点交换位置。
 
-![1572446310693](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446310693.png)
+![1572446310693](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446310693.png)
 
 对应在数组中的交换位置是这样的
 
-![1572446356415](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446356415.png)
+![1572446356415](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446356415.png)
 
 然后循环与父节点进行比较，最终比较到比父节点小为止，因此现在与68进行比较，调换顺序后的结果为
 
-![1572446518777](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446518777.png)
+![1572446518777](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446518777.png)
 
 对应在数组中的结果为
 
-![1572446539673](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446539673.png)
+![1572446539673](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446539673.png)
 
 接下来80再与72进行比较，调换顺序后的结果为
 
-![1572446610280](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446610280.png)
+![1572446610280](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446610280.png)
 
 对应数组中的结果为
 
-![1572446635463](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572446635463.png)
+![1572446635463](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572446635463.png)
 
 此时，发现80已经不能往上，就完成了。
 
@@ -164,23 +164,23 @@ private void siftUp(int index) {
 
 一般交换位置需要3行代码，可以进一步优化，可以将新添加的节点备份，确定最终位置才摆放上去。如下图，我们新添加80时是这样的。
 
-![1572448385909](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572448385909.png)
+![1572448385909](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572448385909.png)
 
 此时80与父节点进行比较，比较后，将父节点移下来，但是新添加的节点，不去覆盖父节点的位置，我们只需要记录80的位置即可，即
 
-![1572448469298](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572448469298.png)
+![1572448469298](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572448469298.png)
 
 然后80再与父节点68进行比较，比较后，68往下移动，并且记录节点80的新位置，即
 
-![1572448609275](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572448609275.png)
+![1572448609275](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572448609275.png)
 
 直到比较到最后，到达根节点或者比父节点小时，记录当前新节点的位置，停止遍历，即
 
-![1572448699380](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572448699380.png)
+![1572448699380](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572448699380.png)
 
 循环停止后，将新元素80保存到记录的位置即可
 
-![1572449020159](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572449020159.png)
+![1572449020159](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572449020159.png)
 
 最终实现代码：
 
@@ -209,39 +209,39 @@ private void siftUp(int index) {
 
 假设现在有如下的一棵二叉堆，我们要删除其堆顶元素80
 
-![1572521810824](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572521810824.png)
+![1572521810824](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572521810824.png)
 
 以上二叉堆对应在数组中的示意图如下
 
-![1572521831286](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572521831286.png)
+![1572521831286](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572521831286.png)
 
 如果我们删除堆顶元素，直接将数组中的首元素删除的话，删除后需要将后面的所有元素往前面移动一个位置，此时，在移动的时间复杂度为O(n)，因此这种方式并不是我们想要的。那么，我们应该怎么处理呢？
 
 我们一般采用的方式是将堆中的最后一个元素，与堆顶元素进行位置交换，交换后，再将最后一个元素删掉，删除完成后，对应的二叉堆为
 
-![1572522037491](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572522037491.png)
+![1572522037491](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572522037491.png)
 
 二叉堆对应的数组为
 
-![1572522059186](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572522059186.png)
+![1572522059186](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572522059186.png)
 
 但是，这样做以后，就不满足最大堆的性质了。要如何才能满足最大堆的性质呢？我们前面讲到，当前节点的值，要大于等于子节点的值，既然这样，那么肯定需要进行比较。如果当前节点的值，已经大于等于子节点的值了，就不需要做任何操作。否则发现当前节点的值，小于子节点的值，就需要做交换操作。
 
 由于我们现在是最大堆，因此在比较时，选择与值最大的子节点进行交换。比较一轮以后的结果为
 
-![1572522392450](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572522392450.png)
+![1572522392450](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572522392450.png)
 
 对应的数组为
 
-![1572522413129](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572522413129.png)
+![1572522413129](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572522413129.png)
 
 交换位置以后，再进行下一轮的比较。如此循环，直到子节点均小于当前节点，此时，已经符合最大堆的性质，停止循环。最终交换完后的结果为
 
-![1572522515077](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572522515077.png)
+![1572522515077](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572522515077.png)
 
 最终对应的数组为
 
-![1572522562550](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572522562550.png)
+![1572522562550](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572522562550.png)
 
 到此位置，删除操作就完成了。
 
@@ -334,33 +334,33 @@ public E replace(E element) {
 
 假设我们现在数组中的数据是如下图这样的：
 
-![1572526554926](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572526554926.png)
+![1572526554926](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572526554926.png)
 
 现在这个堆，我们发现，其明显不是我们想要的最大堆。我们希望将上面数组中的数据，变为最大堆
 
 在我们的一般处理当中，由于根节点不用上滤，因此我们在选择上滤元素时，直接从索引为1的位置开始上滤。最终索引为1的节点上滤完成后的结果为
 
-![1572526735120](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572526735120.png)
+![1572526735120](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572526735120.png)
 
 并且， 从30与34之间的关系来看， 此时两者已经满足最大堆的性质（仅看节点30与34）
 
 34上滤完成后，由73开始上滤，最终73上滤完成后的结果为
 
-![1572527029263](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527029263.png)
+![1572527029263](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527029263.png)
 
 同样的，我们可以发现，从节点73,30,34的角度看，三者同样满足最大堆的性质
 
 如此循环，此时60进行上滤，最终效果为
 
-![1572527085075](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527085075.png)
+![1572527085075](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527085075.png)
 
 60上滤完成后68进行上滤
 
-![1572527134985](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527134985.png)
+![1572527134985](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527134985.png)
 
 最后43进行上滤
 
-![1572527183503](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527183503.png)
+![1572527183503](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527183503.png)
 
 整个过程结束。
 
@@ -380,19 +380,19 @@ for (int i = 0; i < size; i++) {
 
 所以下图中的节点当中，红色的节点才需要进行下滤
 
-![1572527636932](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527636932.png)
+![1572527636932](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527636932.png)
 
 所以，从优化性能的角度出发，我们只需要从 (size >> 1) - 1的位置开始下滤即可
 
 最终以上每个节点，下滤后的结果分别为
 
-![1572527922356](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527922356.png)
+![1572527922356](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527922356.png)
 
-![1572527939964](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527939964.png)
+![1572527939964](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527939964.png)
 
-![1572527963784](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527963784.png)
+![1572527963784](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527963784.png)
 
-![1572527987081](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572527987081.png)
+![1572527987081](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572527987081.png)
 
 最终，我们发现，同样是满足最大堆性质的。
 
@@ -412,7 +412,7 @@ for (int i = ((size >> 1) - 1); i >= 0; i--) {
 
 最终我们可以通过下图来得出结论
 
-![1572529283262](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/1572529283262.png)
+![1572529283262](https://github.com/MSTGit/Algorithm/blob/master/HeapDemo/Resource/1572529283262.png)
 
 我们把三角形想象成为一个堆，顶部的元素最少，越往底部元素越来越多
 
@@ -488,3 +488,9 @@ S(h) = (h - 1) * 2^h - (2^h - 2) = (h - 2) * 2^h +2
 > 2. 如果小于堆顶元素，就使用replace操作
 
 关于Top K问题的实现代码，可以参照demo中的代码实现。
+
+- #### 练习
+
+1. 了解和实现堆排序
+2. 使用堆排序将一个无需数组转换为一个升序数组
+   - 空间复杂度能否下降至O(1)
