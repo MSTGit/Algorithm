@@ -34,5 +34,7 @@
 
 [16-哈希表(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/HashTableDemo)
 
+[17-堆(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/HeapDemo)
+
 
 
