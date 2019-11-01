@@ -38,3 +38,5 @@
 
 [18-队列优先级(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/PriorityQueueDemo)
 
+[19-哈夫曼树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/HuffmanTreeNote)
+
