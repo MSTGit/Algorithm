@@ -36,5 +36,5 @@
 
 [17-二叉堆(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/HeapDemo)
 
-
+[18-队列优先级(笔记&源码)](https://github.com/MSTGit/Algorithm/tree/master/PriorityQueueDemo)
 
