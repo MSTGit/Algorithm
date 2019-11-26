@@ -4,7 +4,7 @@
 
 [01-复杂度(笔记&源码)](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo)
 
-[02-数据结构与动态数组(笔记&源码)](https://github.com/MSTGit/Algorithm/blob/master/ArrayListDemo)
+[02-数据结构与动态数组(笔记&源码<Java/C++>)](https://github.com/MSTGit/Algorithm/blob/master/ArrayListDemo)
 
 [03-单向链表(笔记&源码&练习题解析)](https://github.com/MSTGit/Algorithm/blob/master/LinkedListDemo)
 
