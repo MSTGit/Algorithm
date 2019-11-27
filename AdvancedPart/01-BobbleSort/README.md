@@ -7,15 +7,15 @@
 
 其实，排序的应用无处不在，例如，汽车销售根据销量排序
 
-![1574772731672](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574772731672.png)
+![1574772731672](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574772731672.png)
 
 再例如，游戏充值，根据金额进行排序
 
-![1574772789705](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574772789705.png)
+![1574772789705](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574772789705.png)
 
 认识了排序以后，接下来交接一下经典的**10大排序算法**
 
-![1574774972273](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574774972273.png)
+![1574774972273](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574774972273.png)
 
 以上表格中的结论是基于数组进行排序的一般性结论
 
@@ -50,7 +50,7 @@ for (int end = array.length - 1; end > 0; end--) {
 
 通过上面这种代码，虽然实现了对元素的排序，但是还是有优化的地方，比如在某个时间节点，所有元素已经完全有序[下图]，则可以提前终止冒泡排序。通过上面这种实现方式，是不能达到这种要求的。
 
-![1574775562512](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574775562512.png)
+![1574775562512](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574775562512.png)
 
 由于在排序过程中，是通过一个元素一个元素扫描，来判断是否交换的，所以在第一轮扫描时，就可以知道该组元素是否已经有序。所以只要 `if (array[begin] < array[begin - 1])`成立，这说明当前组元素不完全有序，需要交换，否则就是所有元素都不用交换，则表示已经完全有序。所以可以通过下面方式进行优化
 
@@ -112,13 +112,13 @@ public static void bubbleSort2(Integer[] array) {
 
 得到的结果如下
 
-![1574776919514](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574776919514.png)
+![1574776919514](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574776919514.png)
 
 通过测试时间，得到的结果，发现没有优化的代码，所消耗的时间更短。是不是觉得很奇怪，为什么优化后，反而更慢呢？那想一个问题，bubbleSort2之所以成为优化，在什么情况下，才能被优化。应该是经过冒泡排序后，数组中的数据提前排好序的情况下，可以被优化。假设冒泡排序的数据，数据量很大，而且有很随机的话，很难达到提前有序的情况。由于bubbleSort2相对于bubbleSort1多做了一些事情，所以所消耗的时间更长。
 
 但是如果现在的数据是升序的，同样为10000个元素，最终得到的结果为
 
-![1574777600618](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574777600618.png)
+![1574777600618](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574777600618.png)
 
 通过结果可以发现，bubbleSort1无论数据是否提前有序，都要消耗很长的时间。但是bubbleSort2却可以大大的提高效率。不过需要注意的是，这种优化在某种前提下有效。
 
@@ -128,7 +128,7 @@ public static void bubbleSort2(Integer[] array) {
 
 如果序列尾部已经局部有序，可以记录最后一次交换的位置，较少比较次数。例如现在得到的数据是这样的
 
-![1574777850847](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574777850847.png)
+![1574777850847](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574777850847.png)
 
 如果按照普通的冒泡排序算法，则是依次扫描所有的元素并进行比较。并不会理会后面数据是否有规律。但是上面这组数据，是有优化空间的，通过观察发现，使用冒泡排序的话， 最后面的几个元素的顺序是不会发生改变的，因为这些元素都已经有序，并且比前面的元素都大。也就意味着，交换操作，只需要堆前面未排序的元素进行就行了，没必要对后面已经有序的元素再次比较。所以，如果可以提前发现局部排序的元素，是可以提高效率的。所以可以这样实现
 
@@ -151,13 +151,13 @@ public static void bubbleSort3(Integer[] array) {
 
 通过这种方式优化后，现在来比较三种排序算法最终的结果。同样假设数据样本为10000个升序数据，最终得到的比较结果为
 
-![1574779897219](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574779897219.png)
+![1574779897219](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574779897219.png)
 
 可以看到，最后两种算法的效率是非常高的。
 
 接下来，对数据进行优化，现在利用工具生成10000个数据，其中8000个数据已经排好序。最终运行程序，得到的结果为
 
-![1574780216491](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574780216491.png)
+![1574780216491](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/01-BobbleSort/Resource/1574780216491.png)
 
 可以看到，通过这种局部排序的数据，bubbleSort3是明显优于bubbleSort1和bubbleSort2的。
 
