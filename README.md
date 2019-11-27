@@ -40,6 +40,8 @@
 
 [19-哈夫曼树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/HuffmanTreeNote)
 
+[20-Trie(笔记)](https://github.com/MSTGit/Algorithm/tree/master/TrieDemo)
+
 #### 第二部分:进阶部分
 
 [01-冒泡排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/01-BobbleSort)
