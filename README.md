@@ -20,11 +20,11 @@
 
 [09-二叉搜索树(源码)](https://github.com/MSTGit/Algorithm/tree/master/BinarySearchTreeDemo)
 
-[10-平衡二叉搜索树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/BalanceBinarySearchTreeNode)
+[10-平衡二叉搜索树](https://github.com/MSTGit/Algorithm/tree/master/BalanceBinarySearchTreeNode)
 
 [11-AVL树(源码)](https://github.com/MSTGit/Algorithm/tree/master/AVLTreeDemo)
 
-[12-B树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/BTreeNote)
+[12-B树](https://github.com/MSTGit/Algorithm/tree/master/BTreeNote)
 
 [13-红黑树(源码)](https://github.com/MSTGit/Algorithm/tree/master/RBTreeDemo)
 
@@ -38,11 +38,10 @@
 
 [18-队列优先级(源码)](https://github.com/MSTGit/Algorithm/tree/master/PriorityQueueDemo)
 
-[19-哈夫曼树(笔记)](https://github.com/MSTGit/Algorithm/tree/master/HuffmanTreeNote)
+[19-哈夫曼树](https://github.com/MSTGit/Algorithm/tree/master/HuffmanTreeNote)
 
-[20-Trie(笔记)](https://github.com/MSTGit/Algorithm/tree/master/TrieDemo)
+[20-Trie(源码)](https://github.com/MSTGit/Algorithm/tree/master/TrieDemo)
 
 #### 第二部分:进阶部分
 
 [01-冒泡排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/01-BobbleSort)
-
