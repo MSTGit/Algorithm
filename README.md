@@ -42,5 +42,5 @@
 
 #### 第二部分:进阶部分
 
-[01-冒泡排序(源码)](https://github.com/MSTGit/Algorithm/blob/master/ComplexityDemo)
+[01-冒泡排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/01-BobbleSort)
 
