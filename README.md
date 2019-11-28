@@ -45,3 +45,8 @@
 #### 第二部分:进阶部分
 
 [01-冒泡排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/01-BobbleSort)
+
+[02-选择排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/02-SelectionSort)
+
+[03-堆排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/03-HeapSort)
+
