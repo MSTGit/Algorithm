@@ -44,8 +44,8 @@ public abstract class Sort implements  Comparable<Sort>{
     protected void swap(int i1, int i2) {
         swapCount++;
         int tmp = array[i1];
-        array[i2] = array[i1];
-        array[i1] = tmp;
+        array[i1] = array[i2];
+        array[i2] = tmp;
     }
 
     @Override

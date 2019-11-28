@@ -4,6 +4,7 @@ import com.xd.Sort.SortClass.BubbleSort3;
 import com.xd.Sort.SortClass.HeapSort;
 import com.xd.Sort.SortClass.SelectionSort;
 import com.xd.Sort.SortClass.Sort;
+import com.xd.Sort.tools.Asserts;
 import com.xd.Sort.tools.Integers;
 
 import java.util.Arrays;
@@ -16,7 +17,9 @@ public class SortDemo {
 
     static  void  testSorts(Integer[] array, Sort... sorts) {
         for (Sort sort: sorts  ) {
-            sort.sort(Integers.copy(array));
+            Integer[] newArray = Integers.copy(Integers.copy(array));
+            sort.sort(newArray);
+            Asserts.test(Integers.isAscOrder(newArray));
         }
         Arrays.sort(sorts);
         for (Sort sort: sorts  ) {
