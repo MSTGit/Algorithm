@@ -50,3 +50,5 @@
 
 [03-堆排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/03-HeapSort)
 
+[04-插入排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/04-InsertionSort)
+
