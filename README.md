@@ -52,3 +52,5 @@
 
 [04-插入排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/04-InsertionSort)
 
+[05-归并排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/05-MergeSort)
+
