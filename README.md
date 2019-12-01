@@ -54,3 +54,4 @@
 
 [05-归并排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/05-MergeSort)
 
+[06-归并排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/06-QuickSort)
