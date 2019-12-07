@@ -6,7 +6,7 @@
 
 [02-数据结构与动态数组(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/blob/master/ArrayListDemo)
 
-[03-单向链表(源码&练习题解析)](https://github.com/MSTGit/Algorithm/blob/master/LinkedListDemo)
+[03-单向链表(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/blob/master/LinkedListDemo)
 
 [04-虚拟头节点与双向链表(源码)](https://github.com/MSTGit/Algorithm/tree/master/TwowayLinkedListDemo)
 
