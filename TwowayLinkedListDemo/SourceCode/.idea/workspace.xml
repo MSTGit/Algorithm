@@ -2,90 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0bb1918-b3e3-45bb-971a-57f57796b603" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/AVLTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/AVLTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/ArrayListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/Asserts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/BinarySearchTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinaryTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/ArrayList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Asserts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Circle/CirleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Circle/SingleCircleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/LinkedListDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Single/SingleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Single/SingleLinkedList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566002110905.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566002339295.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566002546728.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566007940936.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566008067840.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566009065412.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/ComplexityDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/Times.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/LinkedListDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/Circle/CircleDeque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/Circle/CircleQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/Deque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/LinkedList/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/LinkedList/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/LinkedList/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/Queue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueDemo/SourceCode/QueueDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/AVLTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/BinaryBalanceSearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/RBTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/RBTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RBTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/Stack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/StackDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asserts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Single/SingleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Single/SingleLinkedList2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdvancedPart/11-UnionFind/SourceCode/UnionFindDemo_泛型/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdvancedPart/11-UnionFind/SourceCode/UnionFindDemo_泛型/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,11 +25,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedListDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/Single/SingleLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/Single/SingleLinkedList2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -144,10 +88,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="y" value="84" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,15 +118,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="LinkList" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SetDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkList" type="462c0819:PsiDirectoryNode" />
+              <item name="Single" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -304,17 +256,18 @@
       <workItem from="1572143933259" duration="44000" />
       <workItem from="1572144036414" duration="17000" />
       <workItem from="1572144138451" duration="13000" />
+      <workItem from="1575722959322" duration="1327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="760000" />
+    <option name="totallyTimeSpent" value="2087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2867804" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -379,10 +332,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/Single/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/Single/SingleLinkedList2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/LinkList/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
     </entry>
