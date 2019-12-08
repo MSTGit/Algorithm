@@ -112,7 +112,10 @@ E LinkedList<E>::get(int index) {
 template <typename E>
 E LinkedList<E>::set(int index, E element) {
     
-    return NULL;
+    Node *n = node(index);
+    E oldElement = n->m_element;
+    n->m_element = element;
+    return oldElement;
 }
 
 template <typename E>
