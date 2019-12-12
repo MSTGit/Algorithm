@@ -8,7 +8,7 @@
 
 [03-单向链表(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/blob/master/LinkedListDemo)
 
-[04-虚拟头节点与双向链表(源码)](https://github.com/MSTGit/Algorithm/tree/master/TwowayLinkedListDemo)
+[04-虚拟头节点与双向链表(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/TwowayLinkedListDemo)
 
 [05-单向循环链表-双向循环链表-静态链表(源码)](https://github.com/MSTGit/Algorithm/tree/master/CircleLinkedListDemo)
 
