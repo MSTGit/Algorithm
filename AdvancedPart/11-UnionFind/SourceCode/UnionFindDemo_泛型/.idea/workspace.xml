@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac841c9-3ce2-4a28-a41c-74d8dd96e9ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../TwowayLinkedListDemo/SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../TwowayLinkedListDemo/SourceCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10-BucketSort/SourceCode/SortDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10-BucketSort/SourceCode/SortDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnionFindDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFindDemo/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/xd/UnionFindDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="103" column="38" lean-forward="true" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
+              <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,6 +153,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,8 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,16 +240,17 @@
       <workItem from="1575642740158" duration="15389000" />
       <workItem from="1575718655979" duration="596000" />
       <workItem from="1576152070789" duration="644000" />
+      <workItem from="1576326949829" duration="203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16629000" />
+    <option name="totallyTimeSpent" value="16832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,7 +311,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/xd/UnionFindDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="103" column="38" lean-forward="true" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
+          <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
