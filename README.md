@@ -70,6 +70,8 @@
 
 [13-广度优先搜索(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/13-BreadthFirstSearch)
 
+[14-深度优先搜索(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/14-DepthFirstSearch)
+
 
 
 
