@@ -72,6 +72,10 @@
 
 [14-深度优先搜索(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/14-DepthFirstSearch)
 
+[15-拓扑排序(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/15-TopologicalSort)
+
+[16-最小生成树](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/16-MinimumSpanningTree)
+
 
 
 
