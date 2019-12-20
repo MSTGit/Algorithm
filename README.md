@@ -76,6 +76,12 @@
 
 [16-最小生成树](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/16-MinimumSpanningTree)
 
+[17-Prim(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/17-Prim)
+
+[18-Kruskal(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/18-Kruskal)
+
+[19-最短路径](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/19-ShortestPath)
+
 
 
 
