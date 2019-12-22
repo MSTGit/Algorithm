@@ -2,69 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0bb1918-b3e3-45bb-971a-57f57796b603" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/AVLTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/AVLTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AVLTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/ArrayListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ArrayListDemo/Asserts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/BinarySearchTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/Refactor/BinaryTreeDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/BinaryTreeInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/BinaryTrees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/InorderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/LevelOrderPrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/Printer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTreeDemo/SourceCode/printer/Strings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/ArrayList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Asserts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Circle/CirleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Circle/SingleCircleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/LinkedListDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Single/SingleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CircleLinkedListDemo/SourceCode/Single/SingleLinkedList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566002110905.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566002339295.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566002546728.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566007940936.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566008067840.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/1566009065412.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/ComplexityDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ComplexityDemo/Times.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/LinkedListDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LinkedListDemo/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circle/CircleDeque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circle/CircleQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QueueDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/List/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/Stack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/Stack/StackDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdvancedPart/11-UnionFind/SourceCode/UnionFindDemo_泛型/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdvancedPart/11-UnionFind/SourceCode/UnionFindDemo_泛型/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xd/Queue/QueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xd/Queue/QueueDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StackDemo/SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../StackDemo/SourceCode/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +30,50 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/QueueDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="270">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/Queue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/Deque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding>
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/LinkedList/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -122,14 +101,15 @@
         <option value="$PROJECT_DIR$/src/com/xd/Set/Times.java" />
         <option value="$PROJECT_DIR$/src/com/xd/Set/TreeSet.java" />
         <option value="$PROJECT_DIR$/src/com/xd/Set/SetDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/xd/Queue/QueueDemo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="y" value="84" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,11 +154,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -298,17 +279,17 @@
       <workItem from="1572143256355" duration="19000" />
       <workItem from="1572143811033" duration="11000" />
       <workItem from="1572143933259" duration="44000" />
+      <workItem from="1576933630964" duration="2156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="730000" />
+    <option name="totallyTimeSpent" value="2886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,7 +299,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37960956" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -341,6 +322,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/xd/Queue/QueueDemo.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/xd/Map/Set/Set.java" />
@@ -372,10 +365,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/LinkedList/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xd/Queue/QueueDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="270">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
