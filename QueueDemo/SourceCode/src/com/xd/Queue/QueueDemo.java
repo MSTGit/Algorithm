@@ -6,9 +6,9 @@ import sun.plugin2.jvm.CircularByteBuffer;
 
 public class QueueDemo {
     public static void main(String[] args) {
-//        dequeTest();
+        dequeTest();
 //        circleQueueTest();
-        circleDequeTest();
+//        circleDequeTest();
     }
 
     public static void circleDequeTest() {
