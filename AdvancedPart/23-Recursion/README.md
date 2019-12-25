@@ -90,6 +90,7 @@ public static void test3(int v) {}
    ![1577085475429](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577085475429.png)
 3. 接下来，main函数内部会分别先后调用test1和test2函数
 4. 调用test1函数，系统会为test1分配一段连续的栈空间，用来保存test1函数中的参数
+   
    ![1577085603111](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577085603111.png)
 5. 由于test1函数内部，没有做任何事情，所以test1函数立马就执行完毕了，所以test1(10)这句代码，一瞬间就执行完了
 6. 一旦一个函数执行完以后，系统就会回收该函数的栈空间。所以test1(10)执行完毕，回收栈空间以后，内存中的结构如下
@@ -137,22 +138,28 @@ int sum(int n) {
 1. 程序已启动，首先会调用main函数，所以系统会为main函数在栈空间开辟一段连续的栈空间，用来保存main函数的参数
    ![1577087146525](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087146525.png)
 2. 接下来，就会在main函数内部调用sum函数，所以会为sum函数开辟一段连续的栈空间，并且会将参数4传递到sum函数中的实参n中。最终的内存结构如下
+   
    ![1577087319499](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087319499.png)
 3. 由于在main函数中传入的参数是4，所以在sum函数内部，又会调用sum(4 - 1)即sum(3)，所以又会为sum函数开辟一段连续的栈空间，push到栈空间中，需要注意，这一次调用sum函数传入的参数是3，所以最终的内存结构如下
    ![1577087602486](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087602486.png)
 4. 与第3不一样，在调用sum(3)时，sum函数又会调用sum(2)，所以又会为sum(2)开辟一段栈空间，并且传入的参数是2，所以内存结构如下
+   
    ![1577087727851](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087727851.png)
 5. 同样的，sum(2)内部会继续调用sum(1)，所以又会继续为sum(1)开辟栈空间，并且传入的参数为1，所以内存结构如下
    ![1577087805531](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087805531.png)
 6. 由于在上一步中，传入的参数是1，根据条件判断，不会再调用sum函数，而是直接将值返回，所以认为找到了递归调用的出口。所以在这个时候，sum(1)函数的调用就结束了，那么sum(1)的栈空间就会被回收，所以内存结构如下
    ![1577087727851](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087727851.png)
 7. sum(1)的结果出来了，所以sum(2)的计算结果也出来了，所以就会执行sum(2)中的return操作，这一步完成后的内存结构如下
+   
    ![1577087602486](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087602486.png)
 8. sum(2)的结果出来了，所以sum(3)的计算结果也出来了，所以就会执行sum(3)中的return操作，这一步完成后的内存结构如下
+   
    ![1577087319499](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087319499.png)
 9. sum(3)的结果出来了，所以sum(4)的计算结果也出来了，所以就会执行sum(4)中的return操作，这一步完成后的内存结构如下
+   
    ![1577087146525](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577087146525.png)
 10. 由于sum(4)函数执行完，main函数中的代码就全部执行完了，所以最终main函数的栈空间也会被回收，这一步完成后的内存结构如下
+    
     ![1577089114088](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/23-Recursion/Resource/1577089114088.png)
 
 上面流程转换为流程图，如下所示
