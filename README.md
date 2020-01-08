@@ -98,5 +98,7 @@
 
 [27-分治(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/27-DivideAndConquer)
 
+[28-动态规划(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/28-DynamicProgramming)
+
 
 
