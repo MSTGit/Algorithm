@@ -100,5 +100,7 @@
 
 [28-动态规划(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/28-DynamicProgramming)
 
+[29-布隆过滤器(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/29-BloomFilter)
+
 
 
