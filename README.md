@@ -102,5 +102,7 @@
 
 [29-布隆过滤器(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/29-BloomFilter)
 
+[30-跳表(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/30-SkipList)
+
 
 
