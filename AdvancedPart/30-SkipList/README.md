@@ -2,7 +2,7 @@
 
 > 一个有序链表（下图），搜索，添加，删除的平均时间复杂度是多少？
 
-![1578746131368](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/29-SkipList/Resource/1578746131368.png)
+![1578746131368](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578746131368.png)
 
 通过对链表这种数据结构的了解可以知道
 
@@ -29,7 +29,7 @@
 
 例如，下图是一个非常普通的链表，而且该链表是有序的
 
-![1578748296360](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/29-SkipList/Resource/1578748296360.png)
+![1578748296360](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578748296360.png)
 
 那怎么来对链表进行优化呢？
 
@@ -39,13 +39,13 @@
 
 所以对上图的链表进行初步优化的话，结果如下
 
-![1578748980979](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/29-SkipList/Resource/1578748980979.png)
+![1578748980979](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578748980979.png)
 
 这样，就在原来公交线路的基础上，增设了一条快速公交，减少了中间经过的站点，所以如果现在想要达到某个站的话，就可以优先选择快速路线，如此一来，就可以节省时间。
 
 那么，能否再更快一点呢？更快一点则就是再增设一条经过站点更少的公交线路，这样从起点到达终点经过的站点更少，可以进一步节省时间，所以可以在原来快速路线的基础上，再提升一层，组成一个新的途径站点。重复压缩经过的站点，直到更优为止。所以上面的公交线路，经过优化后的结果如下
 
-![1578749509078](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/29-SkipList/Resource/1578749509078.png)
+![1578749509078](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578749509078.png)
 
 所以，上面的流程，就是链表的优化思路，其实就是在有序链表的基础上，增加了一个跳跃的功能
 
@@ -92,7 +92,7 @@ public V remove(K key) {
 
 假设现在要往下面的链表中插入一个新的节点17（红色节点）
 
-![1578754789371](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/29-SkipList/Resource/1578754789371.png)
+![1578754789371](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578754789371.png)
 
 分析：
 
