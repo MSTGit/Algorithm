@@ -6,7 +6,7 @@ B+树是B树的一种变体，常用语数据库和操作系统的问题件系�
 
 下图为B+树的大概结构
 
-![1578919343882](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578919343882.png)
+![1578919343882](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/31-B+Tree/Resource/1578919343882.png)
 
 B+树与前面研究的B树，B+树有以下特点：
 
@@ -27,7 +27,7 @@ B+树与前面研究的B树，B+树有以下特点：
 
 B树存储Key-Value的结构如下
 
-![1578920477191](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/30-SkipList/Resource/1578920477191.png)
+![1578920477191](https://github.com/MSTGit/Algorithm/blob/master/AdvancedPart/31-B+Tree/Resource/1578920477191.png)
 
 所以，对比B树，B+树有以下一些优势
 
