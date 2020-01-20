@@ -106,5 +106,7 @@
 
 [31-B+树](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/31-B+Tree)
 
+[32-串(源码)](https://github.com/MSTGit/Algorithm/tree/master/AdvancedPart/31-B+Tree)
+
 
 
