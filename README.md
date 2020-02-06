@@ -18,29 +18,29 @@
 
 [08-二叉树(源码)](https://github.com/MSTGit/Algorithm/tree/master/BinaryTreeNote)
 
-[09-二叉搜索树(源码)](https://github.com/MSTGit/Algorithm/tree/master/BinarySearchTreeDemo)
+[09-二叉搜索树(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/BinarySearchTreeDemo)
 
 [10-平衡二叉搜索树](https://github.com/MSTGit/Algorithm/tree/master/BalanceBinarySearchTreeNode)
 
-[11-AVL树(源码)](https://github.com/MSTGit/Algorithm/tree/master/AVLTreeDemo)
+[11-AVL树(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/AVLTreeDemo)
 
 [12-B树](https://github.com/MSTGit/Algorithm/tree/master/BTreeNote)
 
-[13-红黑树(源码)](https://github.com/MSTGit/Algorithm/tree/master/RBTreeDemo)
+[13-红黑树(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/RBTreeDemo)
 
-[14-集合(源码)](https://github.com/MSTGit/Algorithm/tree/master/SetDemo)
+[14-集合(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/SetDemo)
 
-[15-映射(源码)](https://github.com/MSTGit/Algorithm/tree/master/MapDemo)
+[15-映射(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/MapDemo)
 
-[16-哈希表(源码)](https://github.com/MSTGit/Algorithm/tree/master/HashTableDemo)
+[16-哈希表(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/HashTableDemo)
 
 [17-二叉堆(源码)](https://github.com/MSTGit/Algorithm/tree/master/HeapDemo)
 
-[18-队列优先级(源码)](https://github.com/MSTGit/Algorithm/tree/master/PriorityQueueDemo)
+[18-队列优先级(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/PriorityQueueDemo)
 
 [19-哈夫曼树](https://github.com/MSTGit/Algorithm/tree/master/HuffmanTreeNote)
 
-[20-Trie(源码)](https://github.com/MSTGit/Algorithm/tree/master/TrieDemo)
+[20-Trie(源码<Java/C++>)](https://github.com/MSTGit/Algorithm/tree/master/TrieDemo)
 
 #### 第二部分:进阶部分
 
